@@ -45,6 +45,7 @@ html {
 body {
     background: #FFFFFF;
     color: #2c2c2c;
+	
     font-family: 'quicksand', Arial, sans-serif;
     font-size: 18px;
     line-height: 1.65;
@@ -59,12 +60,12 @@ body.loaded,
     opacity: 1;
 }
 a, a:visited {
-    color: #90D4C5;
+    color: #FD6A43;
     text-decoration: none;
     transition: color 0.1s ease-in-out;
 }
 a:hover, a:active {
-    color: #2c2c2c;
+    color: #FD6A43;
     text-decoration: none;
 }
 
@@ -112,7 +113,10 @@ h6 {
    font-weight: normal;
 }
 p,li {
-    font-weight: 400;
+	
+	font-family: skolar-sans-latin,sans-serif;
+	font-weight: 400;
+	font-style: normal;
     font-size: 1.2rem;
     line-height: 1.5;
     margin: 0 0 20px;
@@ -186,7 +190,7 @@ pre {
 .site-title {
     font-family: 'Righteous',helvetica,sans-serif;
     font-size: 26px;
-    color: #90D4C5;
+    color: #FD6A43;
     line-height: 1.5em;
     position: relative;
     z-index: 12;
@@ -197,10 +201,10 @@ pre {
     position: fixed;
 }
 .site-title a,
-.site-title a:visited { color: #90D4C5; }
+.site-title a:visited { color: #FD6A43; }
 .site-title a:hover,
 .site-title a:active {
-    color: #90D4C5;
+    color: #FD6A43;
     opacity: 0.8;
 }
 .site-title div { display: inline; }
