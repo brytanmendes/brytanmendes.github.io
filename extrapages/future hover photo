@@ -1,0 +1,20 @@
+
+.hover-title {
+    display: inline;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.hover-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 60vh;
+}
