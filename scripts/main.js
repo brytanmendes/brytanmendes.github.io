@@ -1,4 +1,6 @@
+
 jQuery(document).ready(function($){
+    
 	var isLateralNavAnimating = false;
 	
 	//open/close lateral navigation

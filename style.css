@@ -205,11 +205,12 @@ pre {
     font-family: "Righteous",helvetica,sans-serif;
     font-size: 26px;
     color: #00a8e8;
-    line-height: 1.5em;
+    line-height: inherit;
+    height: inherit
     position: relative;
     z-index: 12;
     letter-spacing: 4px;
-    margin-bottom: 120px;
+    margin-bottom: 0px;
 }
 .site-title a {
     position: fixed;
@@ -221,7 +222,7 @@ pre {
     color: #00a8e8;
     opacity: 0.8;
 }
-.site-title div { display: inline;  }
+.site-title div { display: inline; }
 
 .site-tagline {
     clear: both;
@@ -235,7 +236,7 @@ pre {
     width: 90%;
 }
 .site-tagline a,
-.site-tagline a:visited { color: #00a8e8; font-style: italic}
+.site-tagline a:visited { color: #00a8e8; font-style: regular}
 .site-tagline a:hover {
     color: #2c2c2c;
 }
@@ -950,7 +951,7 @@ nav[role="navigation"] {
 }
 .site-header,
 .page-desc {
-    padding: 0px 20px;
+    padding: 20px;
     width: 100%;
 }
 
@@ -976,6 +977,7 @@ nav[role="navigation"] {
     width: 90%;
     position: inherit;
     clear: both;
+    margin-top: 120px;
 }
 .site-content figure{
     margin:0;
@@ -1032,6 +1034,13 @@ nav[role="navigation"] {
 @media only screen and (min-width: 401px) {
 
     /*===== Titles =====*/
+    .site-title{
+        top: 34px;
+    }
+    .site-tagline{
+        padding-top: 120px;
+    }
+    
     .site-tagline p { 
         font-size: 28px;
     }
@@ -1078,6 +1087,7 @@ nav[role="navigation"] {
     .site-header,
     .page-desc {
         padding: 60px;
+/*        60px*/
     }
     .page-desc {
         width: 75%;
@@ -1089,13 +1099,20 @@ nav[role="navigation"] {
     }
     /*===== Titles =====*/
     .site-title {
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
     .site-tagline {
+        margin-top: 120px;
+        padding-top: 140px;
+        margin-bottom: 60px;
+    }
+    .site-content {
+        margin-top: 120px;
+        padding-top: 140px;
         margin-bottom: 60px;
     }
     .site-tagline p { 
-        font-size: 36px;
+        font-size: 30px;
     }
     /*===== Navigations =====*/
     .cd-nav-trigger {
@@ -1153,20 +1170,23 @@ nav[role="navigation"] {
     /*===== Structures =====*/
     .site-header,
     .page-desc {
-        padding: 80px;
+        padding-top: 80px;
     }
     .row {
         margin-top: 80px;
     }
     /*===== Titles =====*/
     .site-title {
-        margin-bottom: 160px;
+        margin-bottom: 0px;
     }
     .site-tagline {
+        margin-top: 120px;
+        padding-top: 160px;
         margin-bottom: 80px;
+        
     }
     .site-tagline p { 
-        font-size: 42px;
+        font-size: 30px;
     }
     /*===== Navigations =====*/
     .cd-nav-trigger {
@@ -1295,21 +1315,28 @@ nav[role="navigation"] {
     /*===== Structures =====*/
     .site-header,
     .page-desc {
-        padding: 100px 200px;
+        padding: 100px 100px;
     }
     .row {
         margin-top: 120px;
     }
     /*===== Titles =====*/
     .site-title {
-        margin-bottom: 200px;
+        margin-bottom: 0px;
+       
+        
+/*        margin-bottom: 200px;*/
     }
     .site-tagline {
+        margin-top: 200px;
+        padding-top: 180px;
+        margin-right:auto;
+        margin-left:auto;
         margin-bottom: 100px;
         width: 75%;
     }
     .site-tagline p { 
-        font-size: 48px;
+        font-size: 30px;
     }
     .site-tagline h1 { 
         font-size: 3.2rem;
